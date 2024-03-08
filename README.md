@@ -30,7 +30,7 @@ Here is a screenshot of my site on desktop version :
 
 And here is a screenshot of my site on a mobile : 
 
-![](/images/screenshot-mobile.jpg)
+![](/images/screenshot-mobile.JPG)
 
 
 ## My process
