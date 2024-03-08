@@ -2,25 +2,6 @@
     margin: 0;
     padding: 0;
 }
-// <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 100 to 900
-
-.montserrat-<uniquifier> {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}
-
-.fraunces-<uniquifier> {
-  font-family: "Fraunces", serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings:
-    "SOFT" 0,
-    "WONK" 0;
-}
 
 body{
     font-family: 'Montserrat', sans-serif;
@@ -39,14 +20,15 @@ main{
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    margin: 10px;
+    margin: 20px;
     max-width: 18rem;
 }
 
 img{
     max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
     border-radius: 10px 10px 0 0 ;
-    display: block;
 }
 
 .intro{
@@ -62,8 +44,7 @@ h1{
     font-family: 'Fraunces',serif;
     font-weight: 900;
     font-size: 26px;
-    margin-left: 20px;
-    margin-bottom: 15px;
+    margin: 0 20px 15px 20px;
     line-height: 98%;
 }
 
@@ -105,6 +86,10 @@ p{
     padding: 10px 0 10px 0;
 }
 
+.bouton:hover{
+    background-color: hsl(158, 36%, 60%);
+}
+
 .bouton h3{
     font-size: 12px;
     font-weight: 500;
@@ -113,3 +98,34 @@ p{
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+@media (min-width:23rem) {
+    main{
+        flex-direction: row;
+        justify-content: center;
+        align-items: stretch;
+        max-width: 30rem;
+    }
+    #first{
+        align-self: center;
+        flex-basis: 50%;
+        height: 100%;
+    }
+    #second{
+        flex-basis: 50%;
+
+    }
+    img{
+        height: 100%;
+        border-radius: 10px 0 0 10px;
+    }
+    picture{
+        display: flex;
+    }
+    .bouton{
+        margin-top: 20px;
+    }
+    .prix{
+        margin-top: 15px;
+    }
+}
