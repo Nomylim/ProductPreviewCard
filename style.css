@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.montserrat-<uniquifier> {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+.fraunces-<uniquifier> {
+  font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "SOFT" 0,
+    "WONK" 0;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100svh;
+}
+
+main{
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 10px;
+    max-width: 18rem;
+}
+
+img{
+    max-width: 100%;
+    border-radius: 10px 10px 0 0 ;
+    display: block;
+}
+
+.intro{
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin: 20px 20px 15px 20px;
+    color: hsl(228, 12%, 48%);
+    font-weight: 500;
+}
+
+h1{
+    font-family: 'Fraunces',serif;
+    font-weight: 900;
+    font-size: 26px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    line-height: 98%;
+}
+
+p{
+    margin: 0 20px 5px 20px;
+    font-size: 12px;
+    line-height: 150%;
+    color: hsl(228, 12%, 48%);
+    font-weight: 500;
+}
+
+.prix{
+    margin-left: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.prix h2{
+    color: hsl(158, 36%, 37%);
+    font-family: 'Fraunces',serif;
+    font-size: 26px;
+    font-weight: 800;
+}
+
+.reduction{
+    margin: 15px;
+    text-decoration: line-through;
+}
+
+.bouton{
+    background-color: hsl(158, 36%, 37%);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 0 20px 20px 20px;
+    padding: 10px 0 10px 0;
+}
+
+.bouton h3{
+    font-size: 12px;
+    font-weight: 500;
+    margin-left: 5px ;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
